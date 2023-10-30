@@ -1,0 +1,378 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.container1 {
+  /* max-width: 1292px;
+  margin: 0 auto; */
+  padding: 20px;
+  background-color: #333;
+  color: beige;
+  
+}
+
+.page {
+  /* display: none; */
+  margin: 0 80px 0 80px;
+}
+
+#searchResults ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0px 8px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#searchResults li {
+  margin: 12px 0;
+  display: flex;
+  width: 250px;
+  height: 190px;
+}
+
+#searchResults li div {
+  /* Limit the width of the <div> to 100% of the <li> width */
+  width: 100%;
+  /* Limit the height of the <div> to 100% of the <li> height */
+  height: 100%;
+  /* Add padding or margin as needed */
+  padding: 10px; /* Adjust as needed */
+  /* Add a border or background color to visually separate the <div> (optional) */
+  border: 1px solid #ccc; /* Adjust as needed */
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(220, 252, 254, 1) 100%
+  ); /* Adjust as needed */
+}
+#searchResults li div div {
+  /* Limit the width of the <div> to 100% of the <li> width */
+  width: 100%;
+  /* Limit the height of the <div> to 100% of the <li> height */
+  padding: 0;
+    border: 0;
+    height: 74%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(220, 252, 254, 1) 100%
+  ); /* Adjust as needed */
+}
+#searchResults li div img {
+  /* Limit the width of the <div> to 100% of the <li> width */
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-top: 4px;
+  border: 0.75px solid darkgrey;
+}
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    font-size: 12px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+  
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%; /* Place the tooltip above the image */
+    left: 77%; /* Center the tooltip */
+    margin-left: -60px; /* Use half of the width to offset the tooltip */
+  
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  /* Tooltip arrow */
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* Place arrow at the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }  
+
+  .tooltipFav {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Tooltip text */
+  .tooltipFav .tooltipFavtext {
+    visibility: hidden;
+    width: 120px;
+    font-size: 12px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: -3%;
+    left: 155%;
+    margin-left: -7px; 
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  /* Tooltip arrow */
+  .tooltipFav .tooltipFavtext::after {
+    content: "";
+    position: absolute;
+    left: 0; /* Place arrow at the left of the tooltip */
+    top: 50%;
+    margin-left: -4.5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltipFav:hover .tooltipFavtext {
+    visibility: visible;
+    opacity: 1;
+  } 
+
+.button {
+  border: none;
+  border-radius: 6px;
+  padding: 4px 9px;
+  cursor: pointer;
+}
+
+.button i {
+  line-height: 1.45px;
+  font-size: 1.125rem;
+}
+
+/* Define a style for the filled heart icon */
+i.fi-ss-heart {
+  color: red; /* Change the color to red */
+}
+
+footer{
+  position: relative;
+  min-height: 122px;
+  /* background-color: palevioletred; */
+  width: 100%;
+  margin: 15px 0px 0px 0px;
+}
+
+footer .actual-wave#wave1 {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 100%;
+  opacity: .87;
+  bottom: 0;
+  height: 100px;
+  background: url(waveFoot.png);
+  background-size: 800px 110px;
+  animation: animateWave 3.5s linear infinite;
+}
+footer .actual-wave#wave2 {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  opacity: .35;
+  width: 100%;
+  bottom: 0;
+  height: 100px;
+  background: url(waveFoot.png);
+  background-size: 850px 110px;
+  animation: animateWave2 4.75s linear infinite;
+}
+
+div #mealDetailContent h3:nth-child(1) {
+  color: snow;
+  font-size: 5vw;
+  position: absolute;
+  margin: 0;
+  /* position: absolute; */
+
+}
+div #mealDetailContent h3:nth-child(2) {
+  color: rgba(23, 153, 218, 1);
+  font-size: 5vw;
+  position: absolute;
+  margin: 0;  
+  animation: animate 5s ease-in-out infinite;
+  /* position: absolute; */
+
+}
+div #mealDetailContent h3:nth-child(3) {
+  color: rgba(50, 185, 255, 1);
+  font-size: 5vw;
+  position: absolute;
+  opacity: .4;
+  margin: 0;  
+  animation: animate2 5s ease-in-out infinite;
+  /* position: absolute; */
+
+}
+
+@keyframes animate {
+  0%, 100%
+  {
+    clip-path: polygon(0 46%, 18% 44%, 36% 49%, 48% 61%, 64% 74%, 86% 71%, 100% 57%, 100% 100%, 0% 100%);
+    /* clip-path: polygon(0% 47%, 12% 45%, 28% 50%, 46% 60%, 65% 62%, 85% 55%, 100% 46%, 100% 100%, 0% 100%) */
+  }
+  50%{
+    clip-path: polygon(0 69%, 17% 76%, 35% 80%, 52% 75%, 65% 62%, 81% 51%, 100% 46%, 100% 100%, 0% 100%);
+  }
+  
+}
+@keyframes animate2 {
+  0%, 100%
+  { 
+    clip-path: polygon(0 69%, 17% 76%, 35% 80%, 52% 75%, 65% 62%, 81% 51%, 100% 46%, 100% 100%, 0% 100%);
+    /* clip-path: polygon(0% 47%, 12% 45%, 28% 50%, 46% 60%, 65% 62%, 85% 55%, 100% 46%, 100% 100%, 0% 100%) */
+  }
+  50%{
+    clip-path: polygon(0 46%, 18% 44%, 36% 49%, 48% 61%, 64% 74%, 86% 71%, 100% 57%, 100% 100%, 0% 100%);  }
+  
+}
+
+.liquid-content{
+  height: 100px;
+}
+
+.imgAndP{
+  display: flex;
+  color: beige;
+  gap: 50px;
+  font-size: 1.35rem;
+}
+
+div.imgAndP img{
+  border-radius: 30%;
+  width: 50%;
+}
+
+@keyframes animateWave {
+  0%{
+    background-position-x: 800px;
+  }
+  100%{
+    background-position-x: 0px;
+  }
+} 
+@keyframes animateWave2 {
+  0%{
+    background-position-x: 0px;
+  }
+  100%{
+    background-position-x: 850px;
+  }
+} 
+
+.btn:link,
+.btn:visited{
+  text-decoration: none;
+    /* text-transform: uppercase; */
+    padding: 15px;
+    display: inline-block;
+    transition: all .2s;
+}
+
+.btn-b{
+  background-color: #fff;
+  color: #777;
+}
+
+.btn:hover{
+  transform: translateY(-3px);
+}
+.btn:active{
+  transform: translateY(-1px);
+}
+
+#searchInput{
+    /* border-radius: 20px; */
+    border: solid 1.3px;
+    /* display: inline-block; */
+    height: 30px;
+    width: 20%;
+}
+
+.inputAndBtn{
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+div.inputAndBtn a
+{
+  background-color: #333;
+    color: beige;
+    border-radius: 25px;
+}
+
+#favoriteMealList{
+  display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+ul#favoriteMealList div{
+  display: flex;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  align-content: center;
+  width: 20%;
+  gap: 12px;
+  margin-top: 18px;
+  flex-direction: column;
+}
+
+ul#favoriteMealList div img{
+  border-radius: 25%;
+  width: 80%;
+}
+ul#favoriteMealList div button{
+  border-radius: 20px;
+  border: 1.75px;
+  width: 44%;
+  font-size: 12.5px;
+  padding: 7px;
+  cursor: pointer;
+}
+/* background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(220, 252, 254, 1) 100%);
+ */

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css"
+    />
+    <link rel="stylesheet" href="stylesMealApp.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Meal App</h1>
+    </header>
+    <div class="container">
+      <section id="home" class="page">
+        <h2>
+          Home Page
+          <!-- <i class="fi fi-ss-heart"></i> -->
+        </h2>
+
+        <div class="inputAndBtn">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search for a meal..."
+          />
+          <a href="#" class="btn btn-b">Discover your favourite meals!</a>
+        </div>
+        <div id="searchResults"></div>
+      </section>
+    </div>
+    <footer>
+      <div class="footer-wave-box">
+        <div class="actual-wave wave-animation" id="wave1"></div>
+        <div class="actual-wave wave-animation" id="wave2"></div>
+      </div>
+    </footer>
+
+    <script src="jsMealApp.js"></script>
+  </body>
+</html>
